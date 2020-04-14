@@ -10,6 +10,6 @@ app.use(cors());
 
 app.use(require('./routes'));
 
-app.listen(PORT || 3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     //console.log(`Server started at: http://localhost:${PORT}`);
 });
